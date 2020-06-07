@@ -1,0 +1,1589 @@
+/*global css*/
+body{
+    font-family: 'Yeseva One', cursive;
+}
+
+p{
+    margin-bottom: 0
+}
+
+
+
+/*header css start*/
+header{
+    background: url(../image/banner.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh
+}
+.navbar{}
+.navbar .nav-item{}
+.navbar .nav-item.active{
+    color: #fff;
+    margin-right: 25px;
+}
+.navbar .nav-item .nav-link{
+    color: #fff;
+    margin-right: 10px;
+    position: relative;
+} 
+
+.navbar .nav-item.active .nav-link::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: greenyellow;
+    height: 2px;
+    width: 0
+    
+}
+.navbar .nav-item .nav-link::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: greenyellow;
+    height: 2px;
+    width: 0;
+    transition: .4s linear;
+}
+
+.navbar .nav-item.active .nav-link:hover::after{
+
+    width:100%
+    
+}
+.navbar .nav-item .nav-link:hover::after{
+
+    width: 100%;
+
+}
+
+/*hero area start*/
+.hero-area{
+    text-align: center;
+    color: #fff;
+    padding: 80px 0px;
+}
+.hero-area h1{
+    padding: 0 10%;
+    font-size: 70px;
+    margin-bottom: 25px;
+}
+.hero-area img{
+    margin-bottom: 70px;
+}
+.hero-area .btn-hotel{
+    padding: 15px 30px;
+    margin-left: 25px;
+    background: #00000073;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    transition: .4s linear;
+}
+
+.hero-area .btn-hotel1{
+    padding: 15px 30px;
+    margin-left: 25px;
+    background: #ffffff26;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #ffffff42;
+    color: #fff;
+    transition: .4s linear;
+}
+
+.hero-area .btn-hotel:hover{
+    background: black;
+    color: goldenrod;
+}
+
+.hero-area .btn-hotel1:hover{
+    background: black;
+    color: goldenrod;
+}
+
+
+/*dish css start*/
+/*dish css start*/
+.dish{
+    background: url(../image/menu-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+.dish .chef{
+    padding: 80px 70px;
+    text-align: center;
+}
+.dish .chef h3{
+    margin-bottom: 35px;
+    color: goldenrod;
+    font-size: 45px
+}
+.dish .chef img{
+    margin-bottom: 20px;
+}
+.dish .chef p{
+    margin-bottom: 35px;
+    line-height: 1.7;
+    padding: 0px 4%;
+}
+
+.dish .chef .cook{
+    margin-bottom: 20px;
+    padding-left: 20%;
+}
+
+.dish .plate{
+    padding: 80px 0px
+}
+
+
+
+/*ingredients css start*/
+.ingredients{
+    background:url(../image/ingredient-bg.png);
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0px;
+}
+.ingredients .box{
+    background-color: #000000b0;
+    color: #fff;
+    width: 30%;
+    padding: 10px 0px;
+    text-align: center;
+    margin-left: 50%;
+
+}
+
+.ingredients .box h3{
+    margin-bottom: 30px;
+}
+.ingredients .box img{
+    margin-bottom: 15px;
+}
+.ingredients .box p{
+    margin-bottom: 20px;
+}
+
+.ingredients .spicy{}
+.ingredients .spicy img{}
+
+
+
+/*menu css start*/
+.menu{
+    padding: 80px 0px;
+    color: goldenrod;
+    background: url(../image/menu-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+.menu .appitisers{
+
+    padding-right: 60px;
+}
+.menu .appitisers h2{
+    margin-bottom: 20px;
+    margin-left: 25%;
+}
+.menu .appitisers img{
+    margin-bottom: 15px;
+    margin-left: 17%;
+}
+.menu .appitisers .price-box{
+    padding: 15px 0px;
+}
+.menu .appitisers .price-box h4{
+    text-align: left;
+}
+
+.menu .appitisers .price-box span{
+
+    float: right;
+}
+.menu .appitisers .price-box p{
+    text-align: left;
+    color: black;
+}
+.menu .appitisers .price-box .gold-line{
+    background: goldenrod;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.menu .starter{
+
+
+
+width: 93%;
+
+margin-left: 40px;
+}
+
+.menu .starter h2{
+    margin-bottom: 20px;
+    margin-left: 32%;
+}
+.menu .starter img{
+    margin-bottom: 15px;
+    margin-left: 17%;
+}
+.menu .starter .price-box{
+    padding: 15px 0px;
+}
+.menu .starter .price-box h4{
+    text-align: left;
+}
+
+.menu .starter .price-box span{
+
+    float: right;
+}
+.menu .starter .price-box p{
+    text-align: left;
+    color: black;
+}
+.menu .starter .price-box .gold-line{
+    background: goldenrod;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+
+.menu .salad{
+
+margin-top: 50px;
+
+padding-right: 60px;
+}
+
+.menu .salad .price-box1 h5{
+    color: #fff;
+    text-align: right;
+    background: goldenrod;
+    margin-bottom: 0;
+    margin-left: 80%;
+    padding-right: 2px;
+}
+.menu .salad .price-box1 h4{
+    text-align: left;
+}
+
+.menu .salad .price-box1 span{
+
+    float: right;
+}
+.menu .salad .price-box1 p{
+    text-align: left;
+    color: black;
+}
+.menu .salad .price-box1 .gold-line{
+    background: goldenrod;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.menu .salad .price-box1 .special{
+    
+    border: 1px solid goldenrod;
+        
+    padding: 10px;
+}
+
+
+.menu .salad h2{
+    margin-bottom: 20px;
+    margin-left: 31%;
+}
+.menu .salad img{
+    margin-bottom: 15px;
+    margin-left: 17%;
+}
+.menu .salad .price-box{
+    padding: 20px 0px;
+}
+.menu .salad .price-box h4{
+    text-align: left;
+}
+
+.menu .salad .price-box span{
+
+    float: right;
+}
+.menu .salad .price-box p{
+    text-align: left;
+    color: black;
+}
+.menu .salad .price-box .gold-line{
+    background: goldenrod;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.menu .main-dishes{
+
+
+
+margin-top: -70px;
+
+margin-left: 40px;
+}
+
+.menu .main-dishes h2{
+    margin-bottom: 20px;
+    margin-left: 27%;
+}
+.menu .main-dishes img{
+    margin-bottom: 15px;
+    margin-left: 17%;
+}
+
+.menu .main-dishes .price-box{
+    padding: 15px 0px;
+    margin-left: 10px;
+}
+.menu .main-dishes .price-box h4{
+    text-align: left;
+}
+
+.menu .main-dishes .price-box span{
+
+    float: right;
+}
+.menu .main-dishes .price-box p{
+    text-align: left;
+    color: black;
+}
+.menu .main-dishes .price-box .gold-line{
+    background: goldenrod;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.menu .main-dishes .price-box1{
+    padding: 5px 0px;
+
+    margin-left: 10px;
+
+}
+
+.menu .main-dishes .price-box1 h5{
+    color: #fff;
+    text-align: right;
+    background: goldenrod;
+    margin-bottom: 0;
+    margin-left: 80%;
+    padding-right: 2px;
+}
+.menu .main-dishes .price-box1 h4{
+    text-align: left;
+}
+
+.menu .main-dishes .price-box1 span{
+
+    float: right;
+}
+.menu .main-dishes .price-box1 p{
+    text-align: left;
+    color: black;
+}
+.menu .main-dishes .price-box1 .gold-line{
+    background: goldenrod;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.menu .main-dishes .price-box1 .special{
+    
+    border: 1px solid goldenrod;
+        
+    padding: 10px;
+}
+
+
+
+/*review css start*/
+.review{
+    background:url(../image/review-bg.png);
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0px;
+}
+.review .box{
+    background-color: #000000b0;
+    color: #fff;
+    width: 40%;
+    padding: 10px 6px;
+    text-align: center;
+    margin-left: 31%;
+}
+
+.review .box h3{
+    margin-bottom: 30px;
+    margin-top: 12px;
+}
+
+.review .box h4{
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.review .box img{
+    margin-bottom: 15px;
+}
+.review .box p{
+    margin-bottom: 20px;
+}
+
+
+/*reservation css start*/
+.reservation{
+    padding: 80px 0px;
+    background:url(../image/menu-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+.reservation .img-box{}
+
+
+.reservation .img-box .img1{}
+.reservation .img-box2{}
+.reservation .img-box .img2{}
+
+.reservation .contact{
+    text-align: center;
+    padding-left: 20%;
+    color: goldenrod;
+}
+.reservation .contact h3{
+    font-size: 40px;
+}
+.reservation .contact img{
+    margin-top: 5px;
+}
+.reservation .contact p{
+    margin-bottom: 20px;
+    padding: 0 17%;
+    margin-top: 25px;
+    color: black;
+}
+.reservation .contact form{}
+.info{}
+.info label{
+    float: left;
+    margin-top: 0px;
+}
+.info input{
+    width: 110%;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+
+
+.contact .btn-book{
+    background: goldenrod;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px 15%;
+    transition: .4s linear
+}
+
+.contact .btn-book:hover{
+    background: darkgoldenrod;
+    color: #fff;
+}       
+
+
+
+
+
+/*footer css start*/
+.footer{
+    padding: 50px 0px;
+    color: #fff;
+    text-align: center;
+    background: black;
+}
+.footer .about-us{}
+.footer .about-us h3{
+    margin-bottom: 20px;
+}
+.footer .about-us img{
+    margin-bottom: 15px;
+}
+.footer .about-us p{}
+
+
+.footer .opening-hour{}
+.footer .opening-hour h3{
+    margin-bottom: 20px;
+}
+.footer .opening-hour img{
+    margin-bottom: 15px;
+}
+.footer .opening-hour p{
+    margin-bottom: 5px;
+}
+
+.footer .opening-hour .nav{
+    margin-top: 30px;
+}
+.footer .opening-hour .nav .nav-item{}
+.footer .opening-hour .nav .nav-item .nav-link{
+    background: black;
+    color: #fff;
+}
+
+.footer .opening-hour .nav .nav-item .nav-link:hover{
+    color: goldenrod;
+}
+
+.footer .our-location{}
+.footer .our-location h3{
+    margin-bottom: 20px;
+
+}
+
+.footer .our-location p{
+    margin-bottom: 5px;
+
+}
+
+.footer .our-location img{
+    margin-bottom: 15px;
+}
+.footer .our-location .nav{
+    margin-top: 30px;
+}
+.footer .our-location .nav .nav-item .nav-link{
+    color: #fff;
+    background: black;
+}
+
+.footer .our-location .nav .nav-item .nav-link:hover{
+    color: goldenrod;
+}
+
+
+
+
+
+
+
+
+
+
+/*responsive start*/
+
+@media (min-width: 0px) and (max-width: 320px) {
+
+
+     header{
+        height: 100%
+    }
+
+    .hero-area .btn-hotel {
+        padding: 15px 55px;
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    .hero-area .btn-hotel1 {
+        padding: 15px 55px;
+        margin-bottom: 30px;
+        display: block;
+    }
+
+
+    .navbar .nav-item.active .nav-link:hover::after{
+
+        width:15%
+        
+    }
+    .navbar .nav-item .nav-link:hover::after{
+
+        width: 25%;
+
+    }
+
+    .hero-area h1 {
+        padding: 0;
+        font-size: 40px;
+    }
+
+    .hero-area img {
+        width: 77%;
+    }
+
+    .dish .chef p {
+        padding: 0px 10%;
+    }
+
+    .dish .chef {
+        padding: 80px 0px;
+        text-align: center;
+    }
+
+    .dish .plate {
+        margin-bottom: 40px;
+        padding: 0
+    }
+
+    .ingredients .box {
+        width: 100%;
+        margin-left: 0
+    }
+
+
+    .menu .main-dishes h2 {
+        margin-left: 20%;
+    }
+
+    .menu .main-dishes img {
+        margin-left: 5%;
+    }
+
+    .menu .salad .price-box1 h5 {
+        margin-left: 80%;
+        font-size: 15px
+    }
+
+    .menu .salad .price-box1 .special {
+        margin-bottom: 25px;
+    }
+
+    .menu .salad h2 {
+        margin-left: 36%;
+    }
+
+    .menu .salad img {
+        margin-left: 5%;
+    }
+
+    .menu .starter h2 {
+        margin-left: 32%;
+    }
+
+    .menu .starter img {
+        margin-left: 5%;
+    }
+
+    .menu .appitisers h2 {
+        margin-left: 24%;
+    }
+
+    .menu .appitisers img {
+        margin-left: 5%;
+    }
+
+    .menu .appitisers {
+        padding-right: 0px;
+    }
+
+    .menu .appitisers .price-box h4 {
+        font-size: 20px;
+    }
+
+    .menu .starter {
+        margin-left: 0px;
+        width: 100%;
+        margin-top: 50px
+    }
+
+    .menu .starter .price-box h4 {
+        font-size: 20px;
+    }
+
+    .menu .salad {
+        padding-right: 0px;
+    }
+
+    .menu .salad .price-box1 h4 {
+        font-size: 20px;
+    }
+
+    .menu .salad .price-box h4 {
+        font-size: 20px;
+    }
+
+    .menu .main-dishes .price-box h4 {
+        font-size: 20px;
+    }
+
+    .menu .main-dishes .price-box1 h4 {
+        font-size: 20px;
+    }
+
+    .menu .main-dishes {
+        margin-top: 35px;
+        margin-left: 0px;
+    }
+
+    .menu .main-dishes .price-box1 h5 {
+        margin-left: 80%;
+        font-size: 15px;
+    }
+
+
+    .review .box {
+        width: 90%;
+        padding: 10px 5px;
+        margin-left: 5%;
+    }
+
+    .reservation .img-box {
+        margin-bottom: 55px;
+    }
+
+    .reservation .img-box .img1 {
+        text-align: center;
+    }
+
+    .reservation .contact p {
+        padding: 0 10%;
+    }
+
+    .reservation .contact {
+        padding-left: 0;
+    }
+
+    .info input {
+        width: 100%;
+        padding: 10px 0px
+    }
+    
+    .footer .our-location .nav {
+        margin-top: 10px;
+    }
+
+    .footer .opening-hour {
+        margin-bottom: 20px;
+    }
+
+    .footer .opening-hour .nav {
+        margin-top: 0px;
+    }
+
+
+
+
+    .footer .about-us {
+        margin-bottom: 25px;
+    }
+
+    .footer .about-us p {
+        padding: 0px 3%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 321px) and (max-width: 375px) {
+    header{
+        height: 100%
+    }
+
+    .hero-area .btn-hotel {
+        padding: 15px 55px;
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    .hero-area .btn-hotel1 {
+        padding: 15px 55px;
+        margin-bottom: 30px;
+        display: block;
+    }
+
+
+    .navbar .nav-item.active .nav-link:hover::after{
+
+        width:15%
+        
+    }
+    .navbar .nav-item .nav-link:hover::after{
+
+        width: 25%;
+
+    }
+
+    .hero-area h1 {
+        padding: 0;
+        font-size: 40px;
+    }
+
+    .hero-area img {
+        width: 77%;
+    }
+
+    .dish .chef p {
+        padding: 0px 10%;
+    }
+
+    .dish .chef {
+        padding: 80px 0px;
+        text-align: center;
+    }
+
+    .dish .plate {
+        margin-bottom: 40px;
+        padding: 0
+    }
+
+    .ingredients .box {
+        width: 100%;
+        margin-left: 0
+    }
+
+
+    .menu .main-dishes h2 {
+        margin-left: 25%;
+    }
+
+    .menu .main-dishes img {
+        margin-left: 12%;
+    }
+
+    .menu .salad .price-box1 h5 {
+        margin-left: 80%;
+        font-size: 15px
+    }
+
+    .menu .salad .price-box1 .special {
+        margin-bottom: 25px;
+    }
+
+    .menu .salad h2 {
+        margin-left: 37%;
+    }
+
+    .menu .salad img {
+        margin-left: 12%;
+    }
+
+    .menu .starter h2 {
+        margin-left: 34%;
+    }
+
+    .menu .starter img {
+        margin-left: 12%;
+    }
+
+    .menu .appitisers h2 {
+        margin-left: 27%;
+    }
+
+    .menu .appitisers img {
+        margin-left: 12%;
+    }
+
+    .menu .appitisers {
+        padding-right: 0px;
+    }
+
+    .menu .appitisers .price-box h4 {
+        font-size: 20px;
+    }
+
+    .menu .starter {
+        margin-left: 0px;
+        width: 100%;
+        margin-top: 50px
+    }
+
+    .menu .starter .price-box h4 {
+        font-size: 20px;
+    }
+
+    .menu .salad {
+        padding-right: 0px;
+    }
+
+    .menu .salad .price-box1 h4 {
+        font-size: 20px;
+    }
+
+    .menu .salad .price-box h4 {
+        font-size: 20px;
+    }
+
+    .menu .main-dishes .price-box h4 {
+        font-size: 20px;
+    }
+
+    .menu .main-dishes .price-box1 h4 {
+        font-size: 20px;
+    }
+
+    .menu .main-dishes {
+        margin-top: 35px;
+        margin-left: 0px;
+    }
+
+    .menu .main-dishes .price-box1 h5 {
+        margin-left: 80%;
+        font-size: 15px;
+    }
+
+
+    .review .box {
+        width: 90%;
+        padding: 10px 5px;
+        margin-left: 5%;
+    }
+
+    .reservation .img-box {
+        margin-bottom: 55px;
+    }
+
+    .reservation .img-box .img1 {
+        text-align: center;
+    }
+
+    .reservation .contact p {
+        padding: 0 10%;
+    }
+
+    .reservation .contact {
+        padding-left: 0;
+    }
+
+    .info input {
+        width: 100%;
+        padding: 10px 0px
+    }
+    
+    .footer .our-location .nav {
+        margin-top: 10px;
+    }
+
+    .footer .opening-hour {
+        margin-bottom: 20px;
+    }
+
+    .footer .opening-hour .nav {
+        margin-top: 0px;
+    }
+
+
+
+
+    .footer .about-us {
+        margin-bottom: 25px;
+    }
+
+    .footer .about-us p {
+        padding: 0px 3%;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media (min-width: 376px) and (max-width: 575px) {
+
+    header{
+        height: 100%
+    }
+
+    .hero-area img {
+        margin-bottom: 55px;
+    }
+
+    .hero-area .btn-hotel {
+        padding: 15px 55px;
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    .hero-area .btn-hotel1 {
+        padding: 15px 55px;
+        margin-bottom: 30px;
+        display: block;
+    }
+
+
+    .navbar .nav-item.active .nav-link:hover::after{
+
+        width:15%
+        
+    }
+    .navbar .nav-item .nav-link:hover::after{
+
+        width: 25%;
+
+    }
+
+    .hero-area h1 {
+        padding: 0;
+        font-size: 50px;
+    }
+
+    .dish .chef h3 {
+        font-size: 40px;
+    }
+
+    .dish .plate {
+        margin-bottom: 30px;
+        padding: 0
+    }
+
+
+    .ingredients .box {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .menu .main-dishes h2 {
+        margin-left: 35%;
+    }
+
+
+
+
+
+    .menu .main-dishes img {
+        margin-left: 30%;
+    }
+
+    .menu .main-dishes {
+        margin-top: 25px;
+        margin-left: 0px;
+    }
+
+    .menu .main-dishes .price-box1 h5 {
+        margin-left: 80%;
+    }
+    .menu .salad img {
+        margin-left: 27%;
+    }
+    .menu .salad h2 {
+        margin-left: 42%;
+    }
+
+    .menu .salad {
+        margin-top: 35px;
+        padding-right: 0px;
+    }
+
+    .menu .salad .price-box1 h5 {
+        margin-left: 80%;
+
+    }
+
+    .menu .starter img {
+        margin-left: 26%;
+    }
+    .menu .starter {
+        width: 100%;
+        margin-left: 0px
+
+    }
+      .menu .starter h2 {
+        margin-left: 40%;
+    }
+
+
+    .menu .appitisers img {
+        margin-left: 26%;
+
+    }
+
+
+    .menu .appitisers h2 {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+
+
+    .menu .appitisers {
+        padding-right: 0px;
+        margin-bottom: 35px;
+    }
+
+    
+
+    .review .box {
+        width: 60%;
+        padding: 10px 5px;
+        margin-left: 20%;
+    }
+
+    .reservation .img-box {
+        margin-bottom: 55px;
+    }
+
+    .reservation .img-box .img1 {
+        text-align: center;
+    }
+
+    .reservation .contact p {
+        padding: 0 10%;
+    }
+
+    .info input {
+        width: 100%;
+    }
+
+    .reservation .contact {
+        padding-left: 0;
+    }
+
+    .footer .our-location .nav {
+        margin-top: 10px;
+    }
+
+    .footer .opening-hour {
+        margin-bottom: 20px;
+    }
+
+    .footer .opening-hour .nav {
+        margin-top: 0px;
+    }
+
+
+
+
+    .footer .about-us {
+        margin-bottom: 25px;
+    }
+
+    .footer .about-us p {
+        padding: 0px 3%;
+    }
+
+}
+@media (min-width: 576px) and (max-width: 767px) {
+
+
+    header{
+        height: 100%
+    }
+
+
+    .hero-area h1 {
+        font-size: 60px;
+        padding: 0
+    }
+
+    .dish .chef h3 {
+        font-size: 50px;
+    }
+
+    .dish .plate {
+        padding-bottom: 60px;
+        padding-top: 0
+    }
+
+
+    .navbar .nav-item.active .nav-link:hover::after{
+
+        width:15%
+        
+    }
+    .navbar .nav-item .nav-link:hover::after{
+
+        width: 25%;
+
+    }
+
+
+
+    .ingredients .box {
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
+    }
+
+
+    .menu .main-dishes h2 {
+        margin-left: 35%;
+    }
+
+
+
+
+
+    .menu .main-dishes img {
+        margin-left: 30%;
+    }
+
+    .menu .main-dishes {
+        margin-top: 25px;
+        margin-left: 0px;
+    }
+    .menu .salad img {
+        margin-left: 27%;
+    }
+    .menu .salad h2 {
+        margin-left: 45%;
+    }
+
+    .menu .salad {
+        margin-top: 35px;
+        padding-right: 0px;
+    }
+
+    .menu .starter img {
+        margin-left: 26%;
+    }
+    .menu .starter {
+        width: 100%;
+        margin-left: 0px
+
+    }
+      .menu .starter h2 {
+        margin-left: 40%;
+    }
+
+
+    .menu .appitisers img {
+        margin-left: 24%;
+
+    }
+
+
+    .menu .appitisers h2 {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+
+
+    .menu .appitisers {
+        padding-right: 0px;
+        margin-bottom: 35px;
+    }
+
+
+
+    .review .box {
+        padding: 10px 5px;
+        width: 60%;
+        margin-left: 20%;
+    }
+
+
+
+    .reservation .img-box {
+        margin-bottom: 60px;
+    }
+
+
+
+    .reservation .contact {
+        text-align: center;
+        padding-left: 0;
+        color: goldenrod;
+    }
+
+    .info input {
+        width: 100%;
+    }
+
+
+
+    .footer .opening-hour .nav {
+        margin-top: 15px;
+    }
+
+
+
+    .footer .opening-hour {
+        margin-bottom: 25px;
+    }
+
+
+
+    .footer .about-us {
+        margin-bottom: 35px;
+    }
+
+
+
+
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    header{
+        height: 100%
+    }
+
+    .navbar .nav-item .nav-link {
+        font-size: 25px;
+    }
+
+    .navbar .nav-item.active .nav-link:hover::after{
+
+        width:15%
+        
+    }
+    .navbar .nav-item .nav-link:hover::after{
+
+        width: 25%;
+
+    }
+
+    .hero-area h1 {
+        font-size: 85px;
+    }
+
+    .hero-area .btn-hotel {
+        padding: 22px 55px;
+    }
+
+    .hero-area .btn-hotel1 {
+        padding: 22px 55px;
+    }
+
+
+    .dish .chef {
+        padding: 80px 45px;
+        padding-bottom: 0;
+        font-size: 25px;
+    }
+
+    .dish .chef .cook {
+        padding-left: 10%;
+    }
+
+    .dish .chef h3 {
+        font-size: 50px;
+    }
+
+    .dish .plate {
+        text-align: center;
+    }
+
+    .ingredients .box {
+        width: 55%;
+        margin-left: 22%;
+    }
+
+    .ingredients .box p {
+        font-size: 25px;
+    }
+
+    .menu .main-dishes h2 {
+        margin-left: 8%;
+        font-size: 45px;
+    }
+
+    .menu .main-dishes img {
+        margin-left: 5%;
+    }
+
+    .menu .main-dishes {
+        margin-left: 0px;
+        text-align: center;
+        font-size: 45px;
+        margin-bottom: 15px;
+        margin-top: 0;
+        font-size: 25px;
+    }
+    .menu .salad img {
+        margin-left: 31%;
+    }
+    .menu .salad h2 {
+        margin-left: 0px;
+        text-align: center;
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+
+
+
+
+    .menu .salad .price-box1 p {
+        font-size: 26px;
+    }
+
+
+    .menu .salad .price-box1 .special {
+        margin-bottom: 30px;
+    }
+
+    .menu .salad .price-box p {
+        font-size: 26px;
+    }    
+
+    .menu .salad {
+        margin-left: 0px;
+        font-size: 45px;
+        margin-bottom: 50px;
+        padding-right: 0;
+    }
+
+
+
+    .menu .starter img {
+        margin-left: 31%;
+    }
+    .menu .starter {
+        width: 100%;
+        margin-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 45px;
+        font-size: 25px
+
+    }
+      .menu .starter h2 {
+         margin-left: 0px;
+        text-align: center;
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+
+
+    .menu .appitisers img {
+        margin-left: 31%;
+
+    }
+
+
+    .menu .appitisers h2 {
+        margin-left: 0px;
+        text-align: center;
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+
+    .menu .appitisers .price-box h4 {
+        font-size: 30px;
+    }
+
+
+
+    .menu .appitisers {
+        padding-right: 0px;
+        margin-bottom: 45px;
+        font-size: 25px
+    }
+
+    .review .box {
+        width: 55%;
+        margin-left: 24%;
+        font-size: 22px;
+    }
+
+    .reservation .img-box .img1 {
+        padding: 0px 30px;
+    }
+
+    .contact .btn-book {
+        margin-top: 45px;
+        padding: 15px 15%;
+        font-size: 30px;
+    }
+
+    .info input {
+        width: 90%;
+        float: left;
+    }
+
+
+    .reservation .contact p {
+        padding: 0 8%;
+    }
+
+
+
+
+    .reservation .contact {
+        padding-left: 0;
+        margin-top: 70px;
+        font-size: 25px
+    }
+
+    .reservation .contact h3 {
+        font-size: 60px;
+    }
+
+
+    .footer .opening-hour {
+        margin-bottom: 30px;
+    }
+
+    .footer .about-us {
+        margin-bottom: 50px;
+    }
+
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    header{
+        height: 100%
+    }
+
+    .hero-area h1 {
+        font-size: 90px;
+        padding: 20px 0px;
+    }
+
+    .dish .plate {
+        padding: 40% 0px;
+    }
+
+    .ingredients .box {
+        width: 40%;
+        margin-left: 52%;
+    }
+
+    .reservation .contact {
+        padding-left: 5%;
+    }
+
+    .footer {
+        padding: 90px 0px;
+    }
+
+}
